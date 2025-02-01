@@ -5,6 +5,8 @@ This mutator is purely for entertainment (and is also just a template for my fra
 
 This adds 5 accessories/meshes to the framework. You can find their names/ids in the Flag Viewer map.
 
+This was made to work with the default skin. As such, custom skins may not work well with the accessories.
+
 More information about the framework this mutator is dependent on can be found [here](https://steamcommunity.com/sharedfiles/filedetails/?id=3385310995).
 
 # Template
