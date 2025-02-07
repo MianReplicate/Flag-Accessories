@@ -4,8 +4,8 @@ behaviour(mutatorName)
 function FlagAccessories:Awake()
 	self.frameworkName = "Custom Flag Framework"
 	self.dataContainer = self.gameObject.GetComponent(DataContainer)
-	self.CustomMeshes = self.dataContainer.GetGameObjectArray("Mesh")
 	self.cover = self.dataContainer.GetTexture("Cover")
+	self.CustomMeshes = {}
 	self.name = mutatorName
 end
 
@@ -18,9 +18,10 @@ function FlagAccessories:Start()
 	end
 
 	local customMeshes = self.dataContainer.GetGameObjectArray("Mesh")
-	self.CustomMeshes = {}
+
 	for _, mesh in ipairs(customMeshes) do
-		table.insert(self.CustomMeshes, mesh.GetComponent(SkinnedMeshRenderer).sharedMesh)
+		local renderer = mesh.GetComponent(SkinnedMeshRenderer)
+		table.insert(self.CustomMeshes, {mesh=renderer.sharedMesh, materials=renderer.materials})
 	end
 	self.framework:addMeshPack(self)
 end
