@@ -97,6 +97,8 @@ MonoBehaviour:
     value: {fileID: 3801192714915401515, guid: 82a18b162ed7ca844bbf39af30d3f1ea, type: 3}
   - id: Mesh5
     value: {fileID: 3080907873951429824, guid: b1470bb8bd15ee24aa8cd7a9af2ae1a4, type: 3}
+  - id: Mesh6
+    value: {fileID: 3480455457213279879, guid: d45e8fff00a38e343a184f427a315a77, type: 3}
   skins: []
   weaponEntries: []
 --- !u!114 &1088778070788855767
